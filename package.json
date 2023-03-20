@@ -1,0 +1,11 @@
+{
+  "name": "scripts-pag-web",
+  "version": "1.0.0",
+  "description": "Scripts para la página web de Rurive",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
