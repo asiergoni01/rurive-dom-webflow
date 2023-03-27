@@ -1,7 +1,18 @@
-// El siguiente archivo contiene el script que lanzamos a rurive.com en su buscador para filtrar y mostrar los resultados de la búsqueda.
+// Create an express server that serve the buscador.js javascript file
 
-// PASO 1 - Revisamos la URL, si hay existe el parámetro filtros, entonces lo guardamos en la variable filtros.
-const urlParams = new URLSearchParams(window.location.search);
-const filtros = urlParams.get('filtros');
+const express = require('express');
+const app = express();
+const port = 3000;
 
-console.log(filtros);
+app.get('/', (req, res) => {
+    //Serves the buscador.js file
+    res.sendFile(__dirname + '/buscador.js');
+
+    }
+);
+
+app.listen(port, () => console.log(`Example app listening on port ${port}!`));
+
+// The command to get the server up is: node index.js
+
+
